@@ -1,0 +1,38 @@
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.chip {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border2);
+  background: var(--chip-bg);
+  color: var(--ink2);
+  cursor: pointer;
+  user-select: none;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.chip--on {
+  background: var(--red-light);
+  color: var(--red-dark);
+  border-color: var(--red-border);
+  font-weight: 500;
+}
+
+.chip--on:hover {
+  background: var(--red-light);
+  color: var(--red-dark);
+}
